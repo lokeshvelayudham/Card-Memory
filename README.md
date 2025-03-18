@@ -1,126 +1,92 @@
-# Card Memory Game
 
-Welcome to the Card Memory Game! 
+## Card Memory Game - Simplified Skill Test
 
-This project is a fun and engaging card game built using React and Vite for the frontend, Node.js/Express for the backend, and MongoDB for data storage. This project is designed as a skill test where different developers can work on specific features based on their expertise.
+### Welcome!
+Thank you for your interest in joining the Echoes of Aetherium Team! This is a simplified skill test designed to understand your approach to problem-solving and development. The tasks are categorized based on your area of expertise.
 
-## Table of Contents
+---
 
-- [Project Description](#project-description)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Setup Guide](#setup-guide)
-- [Usage](#usage)
-- [Task Breakdown](#task-breakdown)
+### 🎯 **Objective:**
+Build a small part of a card memory game based on your assigned role. This is meant to be completed within **2–3 hours** to showcase your skills.
 
-## Project Description
+### 🛠️ **Tech Stack:**
+- Frontend: React, Vite
+- Backend: Node.js, Express
+- Database: MongoDB (only if applicable)
+- Web3: MetaMask integration (only if applicable)
 
-The Card Memory Game is a classic memory matching game where players aim to match pairs of cards. The game tests memory and concentration. It’s designed for all ages and serves as a skill test for different development roles. The game will also have various levels, with harder levels incorporating cryptocurrency functionality.
-
-## Features
-
-- Engaging and user-friendly interface
-- Real-time data handling with a Node.js backend
-- Responsive design optimized for various devices
-- Simple setup and easy-to-understand codebase
-- Multi-role collaboration for the skill test
-
-## Tech Stack
-
-- **Frontend**: React, Vite
-- **Backend**: Node.js, Express
-- **Database**: MongoDB
-- **Web3**: MetaMask integration for crypto payments (on hard level)
-- **Smart Contract**: Simple contract for game logic
-
-## Setup Guide
-
-Follow the steps below to set up the project on your local machine:
-
+### 🚀 **Setup Guide:**
 1. Clone the repository:
    ```bash
    git clone https://github.com/testadminia/Card-Memory.git
    ```
-
-2. Navigate into the project directory:
-    ```bash
-    cd Card-Memory
-    ```
-
+2. Navigate to the project directory:
+   ```bash
+   cd Card-Memory
+   ```
 3. Set up the backend:
-    ```bash
-    cd ./backend
-    npm install
-    npm run dev
-    ```
+   ```bash
+   cd ./backend
+   npm install
+   npm run dev
+   ```
+4. Set up the frontend:
+   ```bash
+   cd ../frontend
+   npm install
+   npm start
+   ```
+5. Visit `http://localhost:5173` to see the project.
 
-4. Open a new terminal console for the frontend:
-    ```bash
-    cd ../frontend
-    npm install
-    npm start
-    ```
+---
 
-## Usage
+### 🧩 **Task Breakdown by Role (Ordered by Importance):**
 
-Once both the backend and frontend servers are running, navigate to http://localhost:5173 in your web browser to start playing the Card Memory Game!
+#### **Tech Lead:**
+- Review the existing codebase and suggest architectural improvements.
+- Draft a brief project roadmap highlighting key milestones and dependencies for scaling the game.
 
+#### **Project Manager:**
+- Create a simple project plan or task board to showcase how you would organize and prioritize tasks for a small team.
+- Identify potential risks in the project and propose mitigation strategies.
 
+#### **Frontend Developer:**
+- Style the login page to be visually appealing and responsive.
+- Create a modal dialog for level selection (Easy, Medium, Hard).
 
+#### **Backend Developer:**
+- Implement a simple API endpoint to save game results.
+- Create a route to fetch the game result history (no need for complex authentication).
 
-## Task Breakdown
+#### **Full Stack Developer:**
+- Complete both the Frontend and Backend tasks.
+- Integrate the API to display the game result history on a new page.
 
-### Project Manager/Tech Lead Tasks:
-- Define the project scope, timelines, and key deliverables.
-- Coordinate between different roles (developers, designers, artists).
-- Ensure smooth workflow of the project.
-- Conduct code reviews and ensure best practices are followed.
+#### **Web3 Developer:**
+- Implement MetaMask wallet connection.
+- Show a message displaying the connected wallet address.
 
-### Frontend Developer Tasks:
-- Implement the **login/register page's style** with basic HTML elements.
-- Design the UI/UX for the game’s main screen, including the **Play Button** and **Instructions Button**.
-- Implement **modal dialogs** for level selection after the user logs in and clicks the Play button.
-  
-### Backend Developer Tasks:
-- Implement an API to **save the game result** and **fetch the history of game results**.
-- Implement the necessary routes and database logic for storing user game history.
-  
-### Full Stack Developer Tasks:
-- Complete the tasks for **Backend Developers** (save game result and get history).
-- Implement a **page to see the user's gameplay history** on the frontend.
-- Integrate the backend API with the frontend to display game results.
+#### **Blockchain Developer:**
+- Implement a simple Solidity smart contract that handles basic game logic (e.g., validating moves).
+- Deploy the contract locally using Hardhat and demonstrate interaction with the frontend.
 
-### Web3 Developer Tasks:
-- Implement **MetaMask wallet connect** functionality for the user to connect their crypto wallet before starting a game.
-- Add **crypto payment logic** to be used only for **Hard** level games. This should be triggered only after the user selects the Hard level.
-  
-### Smart Contract Developer Tasks:
-- Implement a **simple smart contract** that controls the gameplay logic.
-- The smart contract should handle game logic, such as validating moves and managing game results.
+#### **Software Engineer:**
+- Optimize the card-flip logic for smooth performance.
+- Implement basic automated tests for the frontend.
 
-### Software Engineer Tasks:
-- Optimize the game’s performance to ensure smooth gameplay, including efficient state management.
-- Implement automated tests for frontend and backend to maintain code reliability.
+#### **Designer:**
+- Create assets like a styled Play button and card designs.
+- Suggest UI/UX improvements for the main screen.
 
-### Designer Tasks:
-- Develop assets such as buttons, icons, and card designs.
-- Ensure that the design is responsive and user-friendly across different devices.
+---
 
-### Artist Tasks:
-- Design and create unique card illustrations for different levels.
-- Develop background assets and animations to enhance the game experience.
+### 📝 **Submission:**
+- Once completed, please submit your work to **[career@aetheriumhub.com](mailto:career@aetheriumhub.com)**.
+- Share any notes, assumptions, or challenges you encountered.
 
+### 💡 **Need Help?**
+If you have any questions or need guidance, feel free to reach out. We’re here to support you!
 
+---
 
-## Game Introduction
-
-The game initially shows paired cards, with their front faces visible. When the player clicks on a card, it rotates to show its face. The user should then click a second card to try and match it with the first one. If the second card doesn't match, it hides again. If they match, both cards remain shown.
-
-### Game Flow:
-1. **Login/Register Page**: No styled elements, just a basic structure.
-2. **Main Screen**: After logging in, the user will see a **Play button** and **Instructions button**.
-3. **Level Selection Modal**: After clicking Play, a modal will show up to allow the user to select a difficulty level (Easy, Medium, or Hard).
-4. **Gameplay**: Based on the selected difficulty, the user plays the game.
-   - **Hard level** requires the user to connect their MetaMask wallet and use cryptocurrency to pay for each round.
-
-Good luck and happy coding!
+### ⚡ **Good Luck and Have Fun!**
